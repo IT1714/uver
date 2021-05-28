@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="cz">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+  </head>
+  <body>
+      <header style="background-color: lightskyblue;" class="p-3">
+          <h1 class="text-center" style="color: white">Uvěr</h1>
+      </header>
+      <div class="container">
+        <div class="p-2">
+          <div class="row">
+            <div class="col-sm-8">
+              <h2 style="color: blue;">Jak vypočítat měsíční splátky úvěru?</h2>
+              <hr>
+              <p>Můžeme postupovat podle následujícího vzorce:</p>
+              <img src="img/vzorec.png" alt="vzorec" style="width: 100%;">
+            </div>
+            <div class="col-sm-4">
+              <img src="img/uvery.jpg" alt="obrazek" style="width: 100%;">
+            </div>
+          </div>
+        </div>
+        
+          <div style="background-color: black; color: white;" class="p-2">
+            <h2 class="text-center">  VÝPOČET MĚSÍČNÍCH SPLÁTEK PŮJČKY</h2>
+          </div>
+          <div class="p-2">
+            <div class="form-group row">
+              <label for="delka" class="col-sm-3">Délka úvěru:</label>
+              <div class="col-sm-9 row">
+                <input type="number" class="col-sm-8" id="delka" value="0" min="0">
+                <div class="row col-sm-3">
+                  <div class="form-check col-sm-6">
+                    <label class="form-check-label" for="radio1">
+                      <input type="radio" class="form-check-input" id="Mesic" name="doba" value="Mesic" checked>Měsíc
+                    </label>
+                  </div>
+                  <div class="form-check col-sm-6">
+                    <label class="form-check-label" for="radio2">
+                      <input type="radio" class="form-check-input" id="Rok" name="doba" value="Rok">Rok
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form group row p-2">
+              <label for="delka" class="col-sm-3">Úroková sazba:</label>
+              <div class="col-sm-9 row">
+                <input type="number" class="col-sm-8" id="sazba" value="0" min="0" max="100"> % ročně
+              </div>
+            </div> 
+            <div class="form group row p-2">
+              <label for="delka" class="col-sm-3">Výše úvěru</label>
+              <div class="col-sm-9 row">
+                <input type="number" class="col-sm-8" id="uver" value="0" min="0"> 
+              <p>kč</p>
+              </div>
+              
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="offset-sm-6 col-sm-6">
+                <button type="button" id="calc" class="btn btn-danger">
+                    Výpočet
+                </button>
+            </div>
+        </div>
+        <div style="background-color: green;" class="p-3" id="vysledek">
+          <h3 id="vystup"></h3>
+          <h3 id="vystup2"></h3>
+        </div>
+      </div>
+      
+      <hr>
+      <footer>
+          <p class="text-center">&copy 2021-SŠPU Opava - autor: Svatopluk Kvasnička</p>
+      </footer>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="bootstrap/jquery-3.3.1.min.js"></script>
+    <script src="bootstrap/popper.min.js"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
